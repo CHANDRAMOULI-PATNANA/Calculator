@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculator using HTML,CSS and JS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <div class="calculator">
+        <input placeholder="0" type="text" id="display">
+        <div class="buttons">
+            <button class="ac" onclick="clearDisplay()">AC</button>
+            <button class="del" onclick="display.value = display.value.toString().slice(0,-1)">Del</button>
+            <button class="ac" onclick="addDisplay('/')">/</button>
+            <button class="ac" onclick="addDisplay('*')">*</button>
+            <button onclick="addDisplay('7')">7</button>
+            <button onclick="addDisplay('8')">8</button>
+            <button onclick="addDisplay('9')">9</button>
+            <button class="ac" onclick="addDisplay('-')">-</button>
+            <button onclick="addDisplay('4')">4</button>
+            <button onclick="addDisplay('5')">5</button>
+            <button onclick="addDisplay('6')">6</button>
+            <button class="ac" onclick="addDisplay('+')">+</button>
+            <button onclick="addDisplay('1')">1</button>
+            <button onclick="addDisplay('2')">2</button>
+            <button onclick="addDisplay('3')">3</button>
+            <button class="ac" onclick="addDisplay('%')">%</button>
+            <button class="ac" onclick="addDisplay('.')">.</button>
+            <button onclick="addDisplay('0')">0</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
